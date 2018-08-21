@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/home_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white" />
+
+        <!--<View-->
+            <!--android:id="@+id/v_line_home"-->
+            <!--style="@style/account_divider_line_match"-->
+            <!--android:layout_marginTop="10dp" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.chinatelecom.bestpayclient.ui.activity.util.BottomTabLayout
+                android:id="@+id/layout_bottom_tab"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/h5_web_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</RelativeLayout>
